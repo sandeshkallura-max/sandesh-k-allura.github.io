@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mechanical Engineering portfolio focused on HVAC systems, utilities, and facility operations.">
+  <title>Sandesh K Allura | Mechanical Engineering Portfolio</title>
+  <style>
+:root{--ink:#eaf4f2;--muted:#9bb0b2;--paper:#06111b;--white:#0c1c29;--line:#183344;--forest:#071722;--forest2:#0d2a3b;--lime:#c9ff4d;--orange:#ffb36b;--shadow:0 24px 70px rgba(0,0,0,.35)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit}.section-wrap{width:min(1160px,90%);margin-inline:auto}.site-header{height:78px;padding:0 max(5vw,calc((100vw - 1160px)/2));display:flex;align-items:center;justify-content:space-between;gap:24px;position:sticky;top:0;z-index:20;background:rgba(245,244,238,.92);backdrop-filter:blur(18px);border-bottom:1px solid rgba(23,34,30,.1)}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:max-content}.brand-mark{width:42px;height:42px;display:grid;place-items:center;background:var(--forest);color:var(--lime);font-size:12px;font-weight:900;letter-spacing:-.06em;border-radius:50%}.brand-text{font-size:12px;font-weight:850;letter-spacing:.025em;line-height:1.2}.brand-text span{display:block;font-size:8px;letter-spacing:.2em;color:var(--muted);margin-top:5px}nav{display:flex;align-items:center;gap:clamp(12px,2vw,26px)}nav a{text-decoration:none;font-size:11px;font-weight:700;color:#4c5a53;transition:color .2s}nav a:hover{color:#267858}nav .nav-cta{padding:11px 16px;background:var(--forest);color:white;border-radius:999px}.menu-toggle{display:none;border:0;background:none;font-size:24px;color:var(--forest)}
+.hero{display:grid;grid-template-columns:1fr;gap:0;align-items:center;padding-block:72px 76px;min-height:520px}.hero-copy{padding-block:12px;max-width:850px}.eyebrow{margin:0 0 18px;color:#47795d;font-size:10px;font-weight:900;letter-spacing:.18em;text-transform:uppercase}.status-dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:8px;background:#5c9c64;box-shadow:0 0 0 4px #dfead9}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(54px,7vw,88px);line-height:.95;letter-spacing:-.075em;margin:0 0 20px;color:var(--forest);max-width:660px}h1:after{content:".";color:#86a53e}.hero-role{font-size:clamp(15px,1.7vw,19px);font-weight:800;letter-spacing:-.02em;margin-bottom:17px;color:#476c56}.hero-summary{max-width:570px;color:var(--muted);font-size:14px;line-height:1.95}.hero-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:27px}.button{display:inline-flex;align-items:center;gap:18px;padding:13px 18px;border-radius:999px;text-decoration:none;font-size:11px;font-weight:800;transition:transform .2s,background .2s}.button:hover{transform:translateY(-3px)}.button-primary{background:var(--forest);color:#fff}.button-primary span{color:var(--lime);font-size:17px}.button-secondary{border:1px solid #cdd4ca;color:var(--forest);background:transparent}.hero-facts{display:flex;gap:26px;flex-wrap:wrap;margin-top:36px;padding-top:22px;border-top:1px solid var(--line)}.fact strong{display:block;color:var(--forest);font-size:21px;letter-spacing:-.04em}.fact span{display:block;color:var(--muted);font-size:9px;font-weight:700;letter-spacing:.04em}.visual-label b{color:var(--lime)}.ticker{padding:16px 0;background:var(--lime);color:#203c2c;overflow:hidden;white-space:nowrap;text-align:center;font-size:9px;font-weight:900;letter-spacing:.17em}.ticker span{margin:0 20px;color:#5e7b36}
+.section-block{padding-block:92px}.section-heading{margin-bottom:38px}.section-heading h2,.contact-inner h2{font-size:clamp(33px,4.4vw,53px);line-height:1.08;letter-spacing:-.06em;color:var(--forest);margin:0}.section-heading h2 span,.contact-inner h2 span{color:#78953b}.section-heading-row{display:flex;align-items:end;justify-content:space-between;gap:30px}.section-intro{max-width:370px;margin:0 0 4px;color:var(--muted);font-size:12px;line-height:1.9}.about-content{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:start}.about-content>p{font-size:16px;line-height:2;color:#5b6861;margin:0}.about-note{display:flex;gap:13px;padding:24px;background:#e8ebe0;border-radius:0 16px 16px 0;border-left:3px solid #9cbf42}.about-note p{font-size:13px;line-height:1.8;color:var(--forest);font-weight:750;margin:3px 0 0}.note-mark{font-family:Georgia,serif;color:#76913c;font-size:43px;line-height:1}.timeline{border-top:1px solid #d8ddd4}.timeline-item{display:grid;grid-template-columns:180px 1fr;gap:42px;padding:31px 0;border-bottom:1px solid #d8ddd4}.timeline-date{color:#567c48;font-size:11px;font-weight:900}.timeline-type{display:inline-block;margin-top:10px;padding:5px 9px;background:#e5eadc;color:#4b6e3c;font-size:8px;font-weight:900;text-transform:uppercase;letter-spacing:.09em;border-radius:999px}.timeline-content h3{margin:0 0 4px;color:var(--forest);font-size:21px;letter-spacing:-.03em}.timeline-company{font-size:11px;font-weight:750;color:#77827a;margin-bottom:14px}.timeline-content ul{margin:0;padding-left:18px;color:#68736c;font-size:12px}.timeline-content li{padding:4px 0 4px 3px}.timeline-content li::marker{color:#7e9d43}
+.systems-section{padding-top:24px}.systems-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.system-card{overflow:hidden;background:linear-gradient(145deg,rgba(12,31,44,.97),rgba(6,18,28,.97));border:1px solid #1c4352;border-top:2px solid #c9ff4d;border-radius:16px;transition:transform .25s,box-shadow .25s}.system-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(22,48,35,.1)}.system-copy{padding:25px;min-height:100%;display:flex;flex-direction:column;align-items:flex-start}.system-copy h3{color:#eaf8fa}.system-copy>p:not(.system-kicker){font-size:13px;line-height:1.85;color:#a8bbc2}.system-kicker{color:#c9ff4d}.tag-row span{background:#102c38;color:#a8e8ea;border:1px solid #1d4a59}.system-kicker{font-size:8px;font-weight:900;letter-spacing:.14em;color:#739046;margin-bottom:8px}.system-copy h3{font-size:18px;line-height:1.25;letter-spacing:-.04em;color:var(--forest);margin:0 0 10px}.system-copy>p:not(.system-kicker){font-size:11px;line-height:1.8;color:var(--muted);margin-bottom:17px}.tag-row{display:flex;gap:6px;flex-wrap:wrap}.tag-row span{padding:5px 8px;border-radius:999px;background:#edf0e7;color:#4b6350;font-size:8px;font-weight:800}.systems-note{font-size:10px;color:#7b857d;margin:17px 0 0;line-height:1.7}
+.skills-section{background:#e9ece3}.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill-card{min-height:150px;padding:23px;border:1px solid #dce1d6;border-radius:14px;background:rgba(255,255,255,.8);transition:transform .2s,background .2s}.skill-card:hover{transform:translateY(-3px);background:white}.skill-icon{display:inline-grid;place-items:center;width:36px;height:36px;margin-bottom:14px;background:#e3ebd5;color:#456d3e;border-radius:11px;font-size:16px}.skill-card h3{font-size:13px;color:var(--forest);margin:0 0 6px}.skill-card p{font-size:10px;color:var(--muted);line-height:1.8;margin:0}.education-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.education-card{padding:25px;border:1px solid #dfe3da;border-radius:14px;background:#fff;position:relative}.education-card .edu-year{color:#6c8c3c;font-size:9px;font-weight:900;letter-spacing:.09em}.education-card h3{margin:15px 0 9px;color:var(--forest);font-size:16px;line-height:1.45}.education-card p{color:var(--muted);font-size:11px;margin:0}.edu-detail{display:inline-block;margin-top:16px;padding:6px 10px;border-radius:999px;color:#48643e;background:#edf1e6;font-size:9px;font-weight:900}.credentials-grid{display:grid;grid-template-columns:1fr 1fr .85fr;gap:15px}.credential-panel{padding:25px;border:1px solid #dfe3da;border-radius:14px;background:white}.credential-panel h3{color:var(--forest);font-size:15px;margin-bottom:17px}.credential-item{padding:12px 0;border-top:1px solid #e8eae3;display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:11px}.credential-item:before{content:"↗";color:#729044;font-weight:900}.visit-panel{background:var(--forest);border-color:var(--forest);color:#b9cbbd}.visit-panel h3{color:white;margin-top:12px}.visit-panel p{font-size:11px;line-height:1.9;margin-bottom:0}.panel-icon{display:inline-grid;place-items:center;width:36px;height:36px;background:rgba(216,250,103,.13);color:var(--lime);border-radius:11px;font-size:24px}.contact-section{background:#dfe5d8}.contact-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:65px;align-items:center;padding-block:82px}.contact-copy{max-width:420px;color:#637067;font-size:13px;line-height:1.9;margin:22px 0 0}.contact-card{padding:28px;border-radius:17px;background:white;box-shadow:0 18px 55px rgba(24,51,37,.08)}.contact-label{color:#739046;font-size:9px;letter-spacing:.17em;font-weight:900;margin-bottom:17px}.contact-line{display:grid;grid-template-columns:82px 1fr;gap:14px;padding:13px 0;border-bottom:1px solid #e6e9e0;font-size:11px}.contact-line span{color:var(--muted)}.contact-line p,.contact-line a{margin:0;color:var(--forest);font-weight:800;overflow-wrap:anywhere}.contact-footnote{margin:16px 0 0;font-size:9px;color:var(--muted);line-height:1.7}code{background:#edf0e7;padding:2px 4px;border-radius:3px}.site-footer{width:min(1160px,90%);margin-inline:auto;min-height:100px;display:flex;align-items:center;justify-content:space-between;gap:20px}.site-footer>p{color:var(--muted);font-size:10px;margin:0}.back-top{color:var(--forest);text-decoration:none;font-size:10px;font-weight:900}
+@media(max-width:950px){.site-header{padding-inline:5%}nav{gap:12px}nav a{font-size:10px}.hero{gap:30px}.credentials-grid{grid-template-columns:1fr 1fr}.visit-panel{grid-column:span 2}.systems-grid{grid-template-columns:1fr 1fr}.system-card:last-child{grid-column:span 2}}
+@media(max-width:680px){.site-header{height:70px}.menu-toggle{display:block;cursor:pointer}nav{display:none;position:absolute;left:0;right:0;top:69px;padding:16px 5% 22px;flex-direction:column;align-items:stretch;background:var(--paper);border-bottom:1px solid var(--line);box-shadow:0 12px 20px rgba(16,40,61,.08)}nav.open{display:flex}nav a{padding:8px 0;font-size:12px}nav .nav-cta{text-align:center;padding:11px}.hero{grid-template-columns:1fr;padding-block:50px 55px;gap:30px}h1{font-size:60px}.hero-facts{gap:18px}.section-block{padding-block:65px}.section-heading-row{display:block}.section-intro{margin-top:16px}.about-content{grid-template-columns:1fr;gap:25px}.about-content>p{font-size:14px}.timeline-item{grid-template-columns:1fr;gap:12px;padding:25px 0}.timeline-type{margin-top:5px;margin-left:7px}.systems-section{padding-top:0}.systems-grid{grid-template-columns:1fr}.system-card:last-child{grid-column:auto}.skills-grid{grid-template-columns:repeat(2,1fr);gap:9px}.skill-card{padding:16px;min-height:145px}.education-grid,.credentials-grid{grid-template-columns:1fr}.visit-panel{grid-column:auto}.contact-inner{grid-template-columns:1fr;gap:30px;padding-block:65px}.site-footer{padding-block:22px;flex-wrap:wrap}.site-footer>p{order:3;width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+
+/* DARK CINEMATIC THEME + MOTION */
+:root{color-scheme:dark}
+body{background:radial-gradient(ellipse at 80% 5%,rgba(15,91,116,.24),transparent 38%),radial-gradient(ellipse at 8% 35%,rgba(20,82,76,.17),transparent 35%),#050d15;color:#eaf4f2}
+.site-header{background:rgba(4,13,22,.88);border-bottom-color:rgba(95,210,222,.18)}
+.brand-mark,.nav-cta,.button-primary{background:linear-gradient(135deg,#10394b,#071923);border:1px solid rgba(201,255,77,.45);box-shadow:0 0 22px rgba(69,217,220,.08)}
+.brand-text span,nav a{color:#a7bec4} nav a:hover{color:var(--lime)} nav .nav-cta{color:var(--lime)}
+.hero{position:relative} .eyebrow{color:var(--lime)} .status-dot{background:#c9ff4d;box-shadow:0 0 0 4px rgba(201,255,77,.13),0 0 18px #c9ff4d}
+h1{color:#f0fbff;text-shadow:0 0 28px rgba(70,207,231,.15)} h1:after{color:var(--lime)}
+.hero-role{color:#78dce4}.hero-summary,.section-intro,.about-content>p,.timeline-content ul,.timeline-company,.system-copy>p:not(.system-kicker),.contact-copy{color:#a8bbc2}
+.button-secondary{border-color:#285364;color:#d8f6f6;background:rgba(8,29,42,.55)}
+.hero-facts{border-color:#1b3a49}.fact strong{color:var(--lime)}.fact span{color:#9bb0b2}
+
+
+.ticker{background:#0c2834;color:#d8f6f6;border-block:1px solid #1d5563}.ticker span{color:var(--lime)}
+.section-heading h2,.contact-inner h2{color:#edf8fb}.section-heading h2 span,.contact-inner h2 span{color:var(--lime)}
+.about-note{background:linear-gradient(135deg,#0c2733,#0a1b27);border-left-color:var(--lime);border-top:1px solid #1a4551;border-right:1px solid #1a4551;border-bottom:1px solid #1a4551}.about-note p{color:#d7ecee}
+.timeline,.timeline-item{border-color:#1b3947}.timeline-date{color:var(--lime)}.timeline-type{background:#102c38;color:#bceff0;border:1px solid #214b59}.timeline-content h3{color:#effbff}.timeline-content li::marker{color:var(--lime)}
+.system-card,.education-card,.credential-panel,.contact-card{background:linear-gradient(145deg,rgba(12,31,44,.97),rgba(6,18,28,.97));border-color:#1c4352;box-shadow:0 12px 36px rgba(0,0,0,.16)}
+.system-card:hover,.skill-card:hover,.education-card:hover{box-shadow:0 18px 44px rgba(0,0,0,.35),0 0 22px rgba(55,207,221,.1)}
+.system-copy h3,.education-card h3,.credential-panel h3{color:#eaf8fa}.system-kicker,.edu-year,.credential-panel h3{color:var(--lime)}.tag-row span{background:#102c38;color:#a8e8ea;border-color:#1d4a59}
+.skills-section{background:linear-gradient(180deg,#07131d,#091a25);border-block:1px solid #173441}.skill-card{background:#0b202d;border-color:#1b4352}.skill-card h3{color:#e9f7f8}.skill-card p,.education-card p,.edu-detail,.credential-item{color:#a4b9bf}.skill-icon{color:var(--lime)}
+.contact-section{background:radial-gradient(ellipse at 80% 30%,rgba(24,104,119,.2),transparent 40%),linear-gradient(135deg,#081925,#061019);border-top:1px solid #204351}.contact-label,.contact-line span{color:#8eb4bd}.contact-line{border-color:#1b3a48}.contact-line a{color:var(--lime)}.contact-footnote{color:#829da5}.site-footer{background:#030a10;border-top:1px solid #183442;color:#8ca5ac}.back-top{color:var(--lime)}
+/* animated letter reveal and technical ambience */
+.hero-copy{animation:heroRise .85s ease both}
+.letter{display:inline-block;opacity:0;transform:translateY(.65em) rotateX(-65deg);animation:letterRise .65s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(var(--i)*.045s)}
+@keyframes letterRise{to{opacity:1;transform:translateY(0) rotateX(0)}}
+@keyframes heroRise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes visualReveal{from{opacity:0;transform:translateY(20px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes glowPulse{0%,100%{box-shadow:0 0 12px rgba(75,220,229,.06)}50%{box-shadow:0 0 30px rgba(75,220,229,.18)}}
+.status-dot{animation:glowPulse 2.5s ease-in-out infinite}.system-card,.skill-card,.education-card{transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.system-card:hover,.skill-card:hover,.education-card:hover{border-color:rgba(201,255,77,.45)}
+@keyframes orbitPulse{0%,100%{transform:scale(.96);opacity:.55}50%{transform:scale(1.04);opacity:1}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+@media(max-width:760px){.site-header{background:rgba(4,13,22,.96)}.hero{padding-block:48px 42px}.section-block{padding-block:64px}}
+
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Portfolio home">
+      <span class="brand-mark">ME</span>
+      <span class="brand-text">Mechanical Engineering<span>PORTFOLIO</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#systems">Systems</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certificates</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> OPEN TO ENGINEERING OPPORTUNITIES</p>
+        <h1 id="heroName">Mechanical Engineer</h1>
+        <p class="hero-role" id="heroHeadline">HVAC Systems · Utilities · Facility Operations</p>
+        <p class="hero-summary" id="heroSummary"></p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#experience">Explore experience <span>↘</span></a>
+          <a class="button button-secondary" href="#contact">Get in touch</a>
+        </div>
+        <div class="hero-facts" id="heroFacts"></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Areas of experience">
+      <div>HVAC SYSTEMS <span>✳</span> CHILLER PLANTS <span>✳</span> BUILDING UTILITIES <span>✳</span> PREVENTIVE MAINTENANCE <span>✳</span> FACILITY OPERATIONS <span>✳</span></div>
+    </section>
+
+    <section class="section-wrap section-block" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">01 / PROFILE</p>
+        <h2>Engineering knowledge.<br><span>Practical experience.</span></h2>
+      </div>
+      <div class="about-content">
+        <p id="aboutText"></p>
+        <div class="about-note"><span class="note-mark">“</span><p>Focused on safe, reliable building systems and continuous technical learning.</p></div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="experience">
+      <div class="section-heading section-heading-row">
+        <div><p class="eyebrow">02 / CAREER JOURNEY</p><h2>Experience & <span>internships</span></h2></div>
+        <p class="section-intro">Hands-on exposure to HVAC systems, utilities, maintenance, and facility operations.</p>
+      </div>
+      <div class="timeline" id="experienceList"></div>
+    </section>
+
+    <section class="systems-section section-wrap section-block" id="systems">
+      <div class="section-heading section-heading-row">
+        <div><p class="eyebrow">03 / TECHNICAL EXPOSURE</p><h2>Building systems, <span>in practice.</span></h2></div>
+        <p class="section-intro">A closer look at the equipment and environments encountered across commercial facilities and research spaces.</p>
+      </div>
+      <div class="systems-grid">
+        <article class="system-card system-featured">
+          <div class="system-copy"><p class="system-kicker">THERMAL COMFORT</p><h3>Central HVAC & chiller plants</h3><p>Exposure to water-cooled and air-cooled chillers, primary and secondary pumping systems, condenser pumps, and cooling towers.</p><div class="tag-row"><span>Chillers</span><span>Pumps</span><span>Cooling towers</span></div></div>
+        </article>
+        <article class="system-card">
+          <div class="system-copy"><p class="system-kicker">CONTROLLED ENVIRONMENTS</p><h3>Cleanroom HVAC & AHUs</h3><p>Internship exposure to air handling units, precision air conditioning, cleanroom HVAC, and laboratory exhaust treatment.</p><div class="tag-row"><span>AHUs</span><span>Precision AC</span><span>Scrubbers</span></div></div>
+        </article>
+        <article class="system-card">
+          <div class="system-copy"><p class="system-kicker">FACILITY OPERATIONS</p><h3>Utilities, BMS & safety</h3><p>Exposure to building management systems, utility monitoring, fire pumps, fire alarms, PA systems, and HVAC control panels.</p><div class="tag-row"><span>BMS</span><span>Fire safety</span><span>Utilities</span></div></div>
+        </article>
+      </div>
+      <p class="systems-note">These cards describe systems encountered during employment and internships; they are not claims of independent design or commissioning work.</p>
+    </section>
+
+    <section class="skills-section" id="skills">
+      <div class="section-wrap section-block">
+        <div class="section-heading section-heading-row">
+          <div><p class="eyebrow">04 / CAPABILITIES</p><h2>Technical <span>toolkit</span></h2></div>
+          <p class="section-intro">Skills and systems developed through work, internships, and engineering studies.</p>
+        </div>
+        <div class="skills-grid" id="skillsList"></div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="education">
+      <div class="section-heading"><p class="eyebrow">05 / LEARNING</p><h2>Education & <span>training</span></h2></div>
+      <div class="education-grid" id="educationList"></div>
+    </section>
+
+    <section class="section-wrap section-block" id="certifications">
+      <div class="section-heading section-heading-row">
+        <div><p class="eyebrow">06 / CREDENTIALS</p><h2>Certificates & <span>recognition</span></h2></div>
+        <p class="section-intro">Professional learning, industrial exposure, and extracurricular achievements.</p>
+      </div>
+      <div class="credentials-grid">
+        <div class="credential-panel">
+          <h3>Certifications</h3><div id="certificationList"></div>
+        </div>
+        <div class="credential-panel">
+          <h3>Achievements</h3><div id="achievementList"></div>
+        </div>
+        <div class="credential-panel visit-panel">
+          <span class="panel-icon">⌁</span><h3>Industrial visits</h3><p id="industrialVisit"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section-wrap contact-inner">
+        <div><p class="eyebrow">07 / NEXT STEP</p><h2>Let's talk about<br><span>engineering opportunities.</span></h2><p class="contact-copy">Interested in HVAC, mechanical maintenance, utility operations, or facility engineering roles? Get in touch.</p></div>
+        <div class="contact-card">
+          <p class="contact-label">CONTACT DETAILS</p>
+          <div class="contact-line"><span>Email</span><a id="emailLink" href="mailto:sandeshkallurahpt@gmail.com">sandeshkallurahpt@gmail.com</a></div>
+          <div class="contact-line"><span>Location</span><p id="locationText">Karnataka</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#home"><span class="brand-mark">ME</span><span class="brand-text">Mechanical Engineering<span>PORTFOLIO</span></span></a>
+    <p>Designed to grow with your engineering career.</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+  </footer>
+  <script>
+/*
+  EDIT YOUR PORTFOLIO HERE
+  ------------------------
+  Open this file in a text editor to update your details.
+  To add another job/internship, copy one object inside `experience`
+  and change the title, company, dates, type, and bullet points.
+  Keep commas between objects. Save the file and upload the updated files
+  to your GitHub Pages repository to publish changes.
+*/
+window.PORTFOLIO_DATA = {
+  name: "Sandesh K Allura",
+  headline: "HVAC Systems · Utilities · Facility Operations",
+  summary: "Mechanical Engineering professional with HVAC technician experience and internship exposure to HVAC systems, utility maintenance, and facility operations. Familiar with chiller plants, pumps, cooling towers, AHUs, BMS, fire safety systems, CATIA, Solid Edge, and MS Office. Seeking an entry-level Mechanical Engineer, HVAC Engineer, or Utility Engineer role.",
+  about: "I am a Mechanical Engineering student at UBDT College of Engineering with practical experience supporting HVAC and building utility operations in commercial and research environments. My experience includes monitoring chiller plants, pumps, cooling towers, AHUs, cleanroom HVAC, precision air conditioning, and building management systems. I value safe operations, preventive maintenance, teamwork, and continuous learning.",
+  facts: [
+    { value: "3", label: "Work & internship experiences" },
+    { value: "HVAC", label: "Primary technical focus" },
+    { value: "2027", label: "Expected BE graduation" }
+  ],
+  contact: {
+    email: "sandeshkallurahpt@gmail.com",
+    location: "Karnataka"
+  },
+  experience: [
+    {
+      title: "HVAC Technician",
+      company: "Philips · Through TCFM Facility Management",
+      location: "Bengaluru, Karnataka",
+      dates: "Dec 2023 – Aug 2024",
+      type: "Professional experience",
+      bullets: [
+        "Operated and monitored centralized HVAC systems in a commercial corporate facility.",
+        "Monitored water-cooled and air-cooled chiller plants.",
+        "Assisted with Chiller Plant Management (CPM), including primary, secondary, and condenser pumping systems.",
+        "Operated and monitored cooling tower systems."
+      ]
+    },
+    {
+      title: "Engineering Intern",
+      company: "Taj MG Road · Indian Hotels Company Limited (IHCL)",
+      location: "Bengaluru, Karnataka",
+      dates: "Mar 2023 – Jun 2023",
+      type: "Internship",
+      bullets: [
+        "Assisted with operation of centralized HVAC and building utility systems.",
+        "Monitored chiller plants, pumps, and cooling towers.",
+        "Gained exposure to heat pump systems and air handling units (AHUs).",
+        "Assisted with preventive maintenance of HVAC systems.",
+        "Observed low-tension (LT) panels and HVAC control panels.",
+        "Supported operation of fire pumps, fire alarm systems, and public address (PA) systems."
+      ]
+    },
+    {
+      title: "Engineering Intern",
+      company: "Indian Institute of Science (IISc) · Nano Science",
+      location: "Bengaluru, Karnataka",
+      dates: "Aug 2023 – Oct 2023",
+      type: "Internship",
+      bullets: [
+        "Supported operation of cleanroom HVAC systems.",
+        "Assisted with maintenance of AHUs and precision air conditioning systems.",
+        "Observed reverse osmosis (RO) water treatment plant operations.",
+        "Worked with chemical scrubber systems used in laboratory exhaust treatment.",
+        "Assisted in monitoring fire protection and fire alarm systems.",
+        "Worked with Building Management Systems (BMS).",
+        "Gained knowledge of utility management in a research facility."
+      ]
+    }
+    /*
+    ADD A NEW ROLE:
+    Copy the structure below and paste it as another item in this array.
+    Remember to add a comma after the previous role.
+
+    ,{
+      title: "Your new job title",
+      company: "Company name",
+      location: "City, State",
+      dates: "Month Year – Present",
+      type: "Professional experience",
+      bullets: [
+        "Describe a responsibility you actually performed.",
+        "Add another responsibility or measurable achievement."
+      ]
+    }
+    */
+  ],
+  skills: [
+    { icon: "⌁", title: "HVAC Systems", detail: "Central HVAC, chiller plants, AHUs, heat pumps, and precision air conditioning exposure." },
+    { icon: "◉", title: "Chiller Plant Operations", detail: "Water-cooled and air-cooled chillers, primary/secondary pumps, condenser pumps, and cooling towers." },
+    { icon: "⚡", title: "Electrical Systems", detail: "Facility electrical systems, electrical panels, and basic operational monitoring." },
+    { icon: "▤", title: "Breakers & Circuits", detail: "Familiarity with circuit breakers, electrical circuits, and safe electrical-system monitoring." },
+    { icon: "ϟ", title: "DG Set Operations", detail: "Exposure to diesel generator (DG) systems and facility backup-power utilities." },
+    { icon: "⚙", title: "Utility Maintenance", detail: "Utility monitoring, preventive maintenance support, and facility operations." },
+    { icon: "⌂", title: "BMS & Building Systems", detail: "Exposure to Building Management Systems and HVAC control panels." },
+    { icon: "＋", title: "Fire Protection Systems", detail: "Exposure to fire pumps, fire alarm systems, and public address systems." },
+    { icon: "≋", title: "Water Treatment Management", detail: "Exposure to RO water treatment plant operations and water-utility monitoring." },
+    { icon: "▦", title: "CAD & Productivity Tools", detail: "CATIA, Solid Edge, and MS Office. Add your proficiency level as it develops." },
+    { icon: "↻", title: "Active Learning", detail: "Continuous learning, observation, teamwork, and technical problem-solving." }
+  ],
+  education: [
+    {
+      qualification: "Bachelor of Engineering",
+      subject: "Mechanical Engineering",
+      institution: "UBDT College of Engineering, Davangere",
+      year: "Expected 2027",
+      detail: "Currently pursuing"
+    },
+    {
+      qualification: "Diploma",
+      subject: "Mechanical Engineering · Heat Power Technology",
+      institution: "S.J. Government Polytechnic, Bengaluru",
+      year: "Completed",
+      detail: "CGPA: 8.45"
+    },
+    {
+      qualification: "Matriculation",
+      subject: "Secondary School Education",
+      institution: "Government High School, Bengaluru",
+      year: "Completed",
+      detail: "First Class"
+    }
+  ],
+  certifications: [
+    "HVAC & Utilities Management – KSICT",
+    "Internship Certificate – Taj MG Road (IHCL)",
+    "Internship Certificate – IISc Nano Science"
+  ],
+  achievements: [
+    "1st Runner-up – Patriotic Singing Competition",
+    "1st Runner-up – NSS Solo Singing",
+    "2nd Runner-up – Cluster Level Folk Singing Competition",
+    "Participant – VTU Youth Festival (Interact 2025)"
+  ],
+  industrialVisit: "Visited Novotel Hotel and IBIS Clayworks. Observed HVAC systems, utilities, and facility management operations.",
+  languages: ["English", "Kannada", "Hindi"]
+};
+
+</script>
+  <script>
+(function () {
+  const data = window.PORTFOLIO_DATA || {};
+  const byId = (id) => document.getElementById(id);
+  const safeText = (value) => value == null ? "" : String(value);
+
+  document.title = `${data.name || "Mechanical Engineer"} | Portfolio`;
+  const heroName = byId("heroName");
+  heroName.setAttribute("aria-label", data.name || "Mechanical Engineer");
+  heroName.innerHTML = Array.from(data.name || "Mechanical Engineer").map((char, i) => char === " " ? '<span class="letter" style="--i:'+i+'">&nbsp;</span>' : '<span class="letter" style="--i:'+i+'">'+escapeHtml(char)+'</span>').join("");
+  byId("heroHeadline").textContent = data.headline || "";
+  byId("heroSummary").textContent = data.summary || "";
+  byId("aboutText").textContent = data.about || "";
+
+  byId("heroFacts").innerHTML = (data.facts || []).map(f => `
+    <div class="fact"><strong>${escapeHtml(f.value)}</strong><span>${escapeHtml(f.label)}</span></div>
+  `).join("");
+
+  byId("experienceList").innerHTML = (data.experience || []).map(item => `
+    <article class="timeline-item">
+      <div class="timeline-meta">
+        <div class="timeline-date">${escapeHtml(item.dates)}</div>
+        <span class="timeline-type">${escapeHtml(item.type)}</span>
+      </div>
+      <div class="timeline-content">
+        <h3>${escapeHtml(item.title)}</h3>
+        <p class="timeline-company">${escapeHtml(item.company)}${item.location ? " · " + escapeHtml(item.location) : ""}</p>
+        <ul>${(item.bullets || []).map(b => `<li>${escapeHtml(b)}</li>`).join("")}</ul>
+      </div>
+    </article>
+  `).join("");
+
+  byId("skillsList").innerHTML = (data.skills || []).map(skill => `
+    <article class="skill-card">
+      <span class="skill-icon" aria-hidden="true">${escapeHtml(skill.icon || "✳")}</span>
+      <h3>${escapeHtml(skill.title)}</h3><p>${escapeHtml(skill.detail)}</p>
+    </article>
+  `).join("");
+
+  byId("educationList").innerHTML = (data.education || []).map(edu => `
+    <article class="education-card">
+      <div class="edu-year">${escapeHtml(edu.year)}</div>
+      <h3>${escapeHtml(edu.qualification)}<br>${escapeHtml(edu.subject)}</h3>
+      <p>${escapeHtml(edu.institution)}</p>
+      <span class="edu-detail">${escapeHtml(edu.detail)}</span>
+    </article>
+  `).join("");
+
+  byId("certificationList").innerHTML = (data.certifications || []).map(item =>
+    `<div class="credential-item">${escapeHtml(item)}</div>`
+  ).join("");
+  byId("achievementList").innerHTML = (data.achievements || []).map(item =>
+    `<div class="credential-item">${escapeHtml(item)}</div>`
+  ).join("");
+  byId("industrialVisit").textContent = data.industrialVisit || "";
+
+  const contact = data.contact || {};
+  const email = contact.email || "";
+  const emailLink = byId("emailLink");
+  if (email && !email.includes("YOUR_EMAIL")) {
+    emailLink.href = `mailto:${email}`;
+    emailLink.textContent = email;
+  } else {
+    emailLink.href = "#contact";
+    emailLink.textContent = "Add your email";
+  }
+  byId("locationText").textContent = contact.location || "Add your location";
+  const menuToggle = byId("menuToggle");
+  const nav = byId("mainNav");
+  menuToggle.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(open));
+  });
+  nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+    nav.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+  }));
+
+  function escapeHtml(value) {
+    return safeText(value).replace(/[&<>"']/g, char => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+    }[char]));
+  }
+})();
+
+</script>
+</body>
+</html>
