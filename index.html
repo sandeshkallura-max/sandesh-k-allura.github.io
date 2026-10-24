@@ -52,6 +52,8 @@ h1{color:#f0fbff;text-shadow:0 0 28px rgba(70,207,231,.15)} h1:after{color:var(-
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
 @media(max-width:760px){.site-header{background:rgba(4,13,22,.96)}.hero{padding-block:48px 42px}.section-block{padding-block:64px}}
 
+
+.experience-gallery{margin-top:22px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.experience-photo{margin:0;overflow:hidden;border:1px solid #214657;border-radius:13px;background:#0c1c29}.experience-photo img{display:block;width:100%;height:clamp(150px,22vw,250px);object-fit:cover}.experience-photo figcaption{padding:10px 12px;color:#a8bbc2;font-size:11px;line-height:1.55}.experience-gallery-label{grid-column:1/-1;margin:0;color:var(--lime);font-size:10px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}@media(max-width:680px){.experience-gallery{grid-template-columns:1fr}.experience-photo img{height:auto;max-height:280px}}
 </style>
 </head>
 <body>
@@ -346,6 +348,12 @@ window.PORTFOLIO_DATA = {
         <h3>${escapeHtml(item.title)}</h3>
         <p class="timeline-company">${escapeHtml(item.company)}${item.location ? " · " + escapeHtml(item.location) : ""}</p>
         <ul>${(item.bullets || []).map(b => `<li>${escapeHtml(b)}</li>`).join("")}</ul>
+        ${String(item.company || "").includes("Philips") ? `
+          <div class="experience-gallery" aria-label="Philips HVAC equipment photos">
+            <p class="experience-gallery-label">Site photos · HVAC plant</p>
+            <figure class="experience-photo"><img src="philips-hvac-1.jpg" alt="Rooftop HVAC chiller equipment and connected pipework at the Philips facility" loading="lazy"><figcaption>Rooftop HVAC equipment and connected pipework</figcaption></figure>
+            <figure class="experience-photo"><img src="philips-hvac-2.jpg" alt="Multiple rooftop HVAC chiller units and plant equipment" loading="lazy"><figcaption>Chiller plant equipment on the rooftop</figcaption></figure>
+          </div>` : ""}
       </div>
     </article>
   `).join("");
